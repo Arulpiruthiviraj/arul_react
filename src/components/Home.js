@@ -22,8 +22,9 @@ function Home() {
 
                             <Carousel.Caption>
                                 <h3>I'm <br/> Arulpiruthiviraj</h3>
-                                <Button variant="secondary">Secondary</Button>
-
+                                <a target={"_blank"} href="https://drive.google.com/file/d/1QXedPDF3KyL_ex3eOtbmn-7aYE3WQls5/view?usp=sharing" className="btn btn-outline-secondary" role="button" aria-pressed="true">
+                                    View CV
+                                </a>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
