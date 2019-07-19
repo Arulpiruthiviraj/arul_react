@@ -1,8 +1,7 @@
 import React from 'react'
 import mainProPic from "../assets/images/mainProPic.png";
 import backgroundHexPic from "../assets/images/999999.png";
-import productSVG from "../assets/images/product.svg";
-import {Carousel,Col,Row,Container} from "react-bootstrap";
+import {Carousel,Col,Row,Container,Button} from "react-bootstrap";
 
 function Home() {
  
@@ -22,8 +21,9 @@ function Home() {
                             />
 
                             <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <h3>I'm <br/> Arulpiruthiviraj</h3>
+                                <Button variant="secondary">Secondary</Button>
+
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -34,7 +34,7 @@ function Home() {
                             />
 
                             <Carousel.Caption>
-                                <h3>Second slide label</h3>
+                                <h3>I'm <br/> Arulpiruthiviraj</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
