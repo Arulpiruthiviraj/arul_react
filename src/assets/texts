@@ -1,0 +1,40 @@
+Api key= AIzaSyDYNZPzPg8jeFaI65lWlVYjR6ld-A2RQJQ
+client Id=416297991473-buvv95q32gr403mns5kt7ghfen6n1tpq.apps.googleusercontent.com
+refresh token: 416297991473-buvv95q32gr403mns5kt7ghfen6n1tpq.apps.googleusercontent.com
+access token:ya29.GltLB7VcMxcyEAsnkGQxP9ZZFiAaReqHsYcYG9J30eLfLTnpC-L0AKEPYHaQNF_vCFjGcGV8OBUo7Gj8mfnxa_gHehhgqKk_zwX-7oHUZPCg0fl7kc9y-sGin_2s
+
+
+
+
+
+
+
+
+
+
+HTTP/1.1 200 OK
+Content-length: 308
+X-xss-protection: 0
+X-content-type-options: nosniff
+Transfer-encoding: chunked
+Vary: Origin, X-Origin, Referer
+Server: scaffolding on HTTPServer2
+-content-encoding: gzip
+Cache-control: private
+Date: Sat, 20 Jul 2019 08:26:42 GMT
+X-frame-options: SAMEORIGIN
+Alt-svc: quic=":443"; ma=2592000; v="46,43,39"
+Content-type: application/json; charset=utf-8
+{
+  "access_token": "ya29.GltLB7VcMxcyEAsnkGQxP9ZZFiAaReqHsYcYG9J30eLfLTnpC-L0AKEPYHaQNF_vCFjGcGV8OBUo7Gj8mfnxa_gHehhgqKk_zwX-7oHUZPCg0fl7kc9y-sGin_2s",
+  "scope": "https://mail.google.com/",
+  "token_type": "Bearer",
+  "expires_in": 3600,
+  "refresh_token": "1/fqWSccN7phKM8Ru2Upr67qg5-9CFL1-QUjvxVLCW2Hw"
+}
+
+https://developers.google.com/oauthplayground/#step3&apisSelect=https%3A%2F%2Fmail.google.com%2F&url=https%3A%2F%2F&content_type=application%2Fjson&http_method
+=GET&useDefaultOauthCred=unchecked&oauthEndpointSelect=Google&oauthAuthEndpointValue=https%3A%2F%2F
+accounts.google.com%2Fo%2Foauth2%2Fv2%2Fauth&oauthTokenEndpointValue=https%3A%2F%2Fwww.googleapis.com%2
+Foauth2%2Fv4%2Ftoken&includeCredentials=unchecked&accessTokenType=bearer&autoRefreshToken=checked&accessType=
+offline&prompt=consent&response_type=code&wrapLines=on
