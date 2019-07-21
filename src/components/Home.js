@@ -1,6 +1,5 @@
 import React from 'react'
 import mainProPic from "../assets/images/mainProPic.png";
-import backgroundHexPic from "../assets/images/999999-pro.png";
 import cvBackgroundHexPic from "../assets/images/cv.png";
 import projectsBackgroundHexPic from "../assets/images/projects.png";
 import blogBackgroundHexPic from "../assets/images/blog.png";

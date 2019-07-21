@@ -1,26 +1,57 @@
-export const skillsData = [
+export const skillsDataFrameworks = [
     {
-        "id": "0837a8f79f4657150c482f9400daea0b",
-        "name": "Zathin"
+        "name": "Laravel"
     },
     {
-        "id": "73000dccc18fd56c9941ee432a96708d",
-        "name": "Tempsoft"
+        "name": "React"
     },
     {
-        "id": "33c6b55a4abad5eeaa6b29a3aeee8213",
-        "name": "Bamity"
+        "name": "jQuery"
     },
     {
-        "id": "7e5baef968a2c8ad3254169126247546",
-        "name": "Span"
+        "name": "Angular"
     },
     {
-        "id": "528fcca2b4c1bf6d6190f848837c8d09",
-        "name": "Duobam"
+        "name": "Django"
+    },
+];
+export const skillsDataLanguages = [
+    {
+        "name": "php"
     },
     {
-        "id": "b2452085516c81bab68c9f244700d8c1",
-        "name": "Veribet"
+        "name": "python"
+    },
+    {
+        "name": "javascript"
+    },
+    {
+        "name": "C"
+    },
+    {
+        "name": "C++"
+    } ,
+    {
+        "name": "HTML"
+    } ,
+    {
+        "name": "CSS"
     }
+];
+export const skillsDataLearning = [
+    {
+        "name": "DataScience"
+    },
+    {
+        "name": "Machine Learning"
+    },
+    {
+        "name": "Tensorflow"
+    },
+    {
+        "name": "pyTorch"
+    },
+    {
+        "name": "openCV"
+    },
 ];
