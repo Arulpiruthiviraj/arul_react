@@ -5,14 +5,25 @@ import cvBackgroundHexPic from "../assets/images/cv.png";
 import projectsBackgroundHexPic from "../assets/images/projects.png";
 import blogBackgroundHexPic from "../assets/images/blog.png";
 import {Carousel,Col,Row,Container,Button} from "react-bootstrap";
+import '../assets/css/backGroundWave.css'
 
 function Home() {
  
     return (
         <Container style={{marginTop:60}}>
+            {/*<div id='stars'></div>*/}
+            {/*<div id='stars2'></div>*/}
+            {/*<div id='stars3'></div>*/}
+            <div className='box'>
+                <div className='wave -one'></div>
+                <div className='wave -two'></div>
+                <div className='wave -three'></div>
+            </div>
+            <div id="back"></div>
+            <div id="front"></div>
             <Row>
                 <Col sm={6}>
-                    <img src={mainProPic} width={"100%"} height={"100%"}/>
+                    <img src={mainProPic} width={"100%"} height={"100%"} style={{ border:"none"}}/>
                 </Col>
                 <Col sm={6}>
                     <Carousel>
@@ -21,6 +32,7 @@ function Home() {
                                 className="d-block w-100"
                                 src={cvBackgroundHexPic}
                                 alt="First slide"
+                                style={{ border:"none"}}
                             />
 
                             <Carousel.Caption>
@@ -35,6 +47,7 @@ function Home() {
                                 className="d-block w-100"
                                 src={projectsBackgroundHexPic}
                                 alt="Third slide"
+                                style={{ border:"none"}}
                             />
 
                             <Carousel.Caption>
@@ -49,6 +62,8 @@ function Home() {
                                 className="d-block w-100"
                                 src={blogBackgroundHexPic}
                                 alt="Third slide"
+                                style={{ border:"none",    boxShadow:" 0 0 8px 8px white inset"
+                                }}
                             />
 
                             <Carousel.Caption>

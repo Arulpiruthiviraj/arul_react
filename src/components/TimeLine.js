@@ -4,7 +4,7 @@ import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 
 function TimeLine() {
     return (
-        <Fragment>
+        <Fragment style={{marginTop:60}}>
             <Timeline lineColor={'#ddd'}>
                 <TimelineItem
                     key="001"

@@ -8,10 +8,11 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import NavBar from "../components/NavBar";
 import TimeLine from "../components/TimeLine";
+import Skills from "../components/Skill";
 
 const routes = [
     { path: '/', name: 'Home', Component: Home },
-    { path: '/skills', name: 'Skills', Component: Home },
+    { path: '/skills', name: 'Skills', Component: Skills },
     { path: '/timeline', name: 'Timeline', Component: TimeLine },
     { path: '/blog', name: 'Blog', Component: About },
     { path: '/contact', name: 'Contact', Component: Contact},
