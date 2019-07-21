@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 import { CSSTransition } from 'react-transition-group'
-import { Container,Row,Col} from 'react-bootstrap'
+import { Container} from 'react-bootstrap'
 import '../assets/css/style.css'
 import Home from "../components/Home";
 import About from "../components/About";
