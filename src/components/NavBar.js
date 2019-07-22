@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink} from "react-router-dom";
 import {Nav, Navbar} from "react-bootstrap";
-import portFolioSvg from '../assets/images/portfolio.svg'
+import portFolioSvg from './assets/images/portfolio.svg'
 
 
 function NavBar({routes}) {

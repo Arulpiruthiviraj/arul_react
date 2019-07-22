@@ -1,9 +1,9 @@
-import laravelLogo from "../assets/images/laravel_logo.svg";
-import djangoLogo from "../assets/images/django-logo-positive.svg";
-import reactLogo from "../assets/images/reactLogo.svg";
-import angularLogo from "../assets/images/angularLogo.svg";
-import jqueryLogo from "../assets/images/jqueryLogo.svg";
-import bootstrapLogo from "../assets/images/bootstrapLogo.svg";
+import laravelLogo from "./assets/images/laravel_logo.svg";
+import djangoLogo from "./assets/images/django-logo-positive.svg";
+import reactLogo from "./assets/images/reactLogo.svg";
+import angularLogo from "./assets/images/angularLogo.svg";
+import jqueryLogo from "./assets/images/jqueryLogo.svg";
+import bootstrapLogo from "./assets/images/bootstrapLogo.svg";
 
 
 
