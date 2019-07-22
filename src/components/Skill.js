@@ -4,7 +4,6 @@ import { skillsDataFrameworks } from "./skillData"
 import { skillsDataLanguages } from "./skillData"
 import { skillsDataLearning } from "./skillData"
 import {Container,Row,Col,Card} from "react-bootstrap";
-import djangoLogo from "../assets/images/jqueryLogo.svg";
 
 
 function Skills() {
@@ -36,7 +35,7 @@ function Skills() {
                         >
                             <Card bg="secondary" text="white" style={{ width: '18rem' ,height:"18rem"}} >
                                 <Card.Header>{element.name}</Card.Header>
-                                <Card.Img variant="top" src={element.logo} height={100} width={100}/>
+                                <Card.Link href={element.framework_link} target={"_blank"}><Card.Img variant="top" src={element.logo} height={100} width={100}/></Card.Link>
                                 <Card.Body >
                                     <Card.Text  >
                                         {element.secondaryTitle}
@@ -44,9 +43,6 @@ function Skills() {
                                 </Card.Body>
                             </Card>
                             <br/>
-                            <br/>
-
-
                         </div>
                     ))}
             </div>

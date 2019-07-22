@@ -3,6 +3,7 @@ import djangoLogo from "../assets/images/django-logo-positive.svg";
 import reactLogo from "../assets/images/reactLogo.svg";
 import angularLogo from "../assets/images/angularLogo.svg";
 import jqueryLogo from "../assets/images/jqueryLogo.svg";
+import bootstrapLogo from "../assets/images/bootstrapLogo.svg";
 
 
 
@@ -39,7 +40,14 @@ export const skillsDataFrameworks = [
         "name": "jQuery",
         "logo":jqueryLogo,
         "secondaryTitle":"jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
-        "framework_link":"https://angularjs.org/"
+        "framework_link":"https://jquery.com/"
+    },
+   {
+        "name": "Bootstrap",
+        "logo":bootstrapLogo,
+        "secondaryTitle":"Bootstrap is a free and open-source CSS framework directed at responsive, " +
+            "mobile-first front-end web development.",
+        "framework_link":"https://getbootstrap.com/"
     },
 
 ];
