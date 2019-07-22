@@ -4,6 +4,10 @@ import reactLogo from "../assets/images/reactLogo.svg";
 import angularLogo from "../assets/images/angularLogo.svg";
 import jqueryLogo from "../assets/images/jqueryLogo.svg";
 import bootstrapLogo from "../assets/images/bootstrapLogo.svg";
+import pythonLogo from "../assets/images/python.svg";
+import phpLogo from "../assets/images/php.svg";
+import cLogo from "../assets/images/c.svg";
+import cplusplusLogo from "../assets/images/cplusplus.svg";
 
 
 
@@ -64,26 +68,9 @@ export const skillsDataFrameworks = [
 ];
 export const skillsDataLanguages = [
     {
-        "name": "php"
+        "name": "php",
+        "logo":phpLogo,
     },
-    {
-        "name": "python"
-    },
-    {
-        "name": "javascript"
-    },
-    {
-        "name": "C"
-    },
-    {
-        "name": "C++"
-    } ,
-    {
-        "name": "HTML"
-    } ,
-    {
-        "name": "CSS"
-    }
 ];
 export const skillsDataLearning = [
     {
