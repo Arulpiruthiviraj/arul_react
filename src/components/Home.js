@@ -1,10 +1,10 @@
 import React from 'react'
-import mainProPic from "./assets/images/mainProPic.png";
-import cvBackgroundHexPic from "./assets/images/cv.png";
-import projectsBackgroundHexPic from "./assets/images/projects.png";
-import blogBackgroundHexPic from "./assets/images/blog.png";
+import mainProPic from "../assets/images/mainProPic.png";
+import cvBackgroundHexPic from "../assets/images/cv.png";
+import projectsBackgroundHexPic from "../assets/images/projects.png";
+import blogBackgroundHexPic from "../assets/images/blog.png";
 import {Carousel,Col,Row,Container,Button} from "react-bootstrap";
-import './assets/css/backGroundWave.css'
+import '../assets/css/backGroundWave.css'
 
 function Home() {
  
