@@ -1,19 +1,47 @@
+import laravelLogo from "../assets/images/laravel_logo.svg";
+import djangoLogo from "../assets/images/django-logo-positive.svg";
+import reactLogo from "../assets/images/reactLogo.svg";
+import angularLogo from "../assets/images/angularLogo.svg";
+import jqueryLogo from "../assets/images/jqueryLogo.svg";
+
+
+
+
+
+
 export const skillsDataFrameworks = [
     {
-        "name": "Laravel"
+        "name": "Laravel",
+        "logo":laravelLogo,
+        "secondaryTitle":" Laravel is an open source web development  framework which is written in PHP ." +
+            "Laravel provides a rich set of functionalities similar to that of Ruby on Rails.",
+        "framework_link":"https://laravel.com/"
     },
     {
-        "name": "React"
+        "name": "Django",
+        "logo":djangoLogo,
+        "secondaryTitle":" Django is a high-level open source web framework based on Python that provides rapid development and clean design solution",
+        "framework_link":"https://www.djangoproject.com/"
     },
     {
-        "name": "jQuery"
+        "name": "ReactJS",
+        "logo":reactLogo,
+        "secondaryTitle":" React is a JavaScript library for building user interfaces.React can be used as a base in the development of single-page ",
+        "framework_link":"https://reactjs.org/"
     },
     {
-        "name": "Angular"
+        "name": "AngularJS",
+        "logo":angularLogo,
+        "secondaryTitle":"AngularJS is a JavaScript-based open-source front-end web framework mainly maintained by Google",
+        "framework_link":"https://angularjs.org/"
     },
-    {
-        "name": "Django"
+   {
+        "name": "jQuery",
+        "logo":jqueryLogo,
+        "secondaryTitle":"jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+        "framework_link":"https://angularjs.org/"
     },
+
 ];
 export const skillsDataLanguages = [
     {
