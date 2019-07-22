@@ -6,6 +6,8 @@ import { skillsDataLearning } from "./skillData"
 import {Container,Row,Col,Card,Button} from "react-bootstrap";
 import "../assets/css/LogoAnime.css"
 import LanguageSkills from "./LanguageSkills";
+import {CSSTransition} from "react-transition-group";
+import FrameWorkSkills from "./FrameWorkSkills";
 
 function Skills() {
     const [cards,setCards]=useState([]);
@@ -50,33 +52,20 @@ function Skills() {
                 { frameworkShow ?(
                     <Container>
                     <div className="row ">
-                        { skillsDataFrameworks.map((element, index) => (
-                            <div
-                                key={index}
-                                className="col-12 col-sm-6 col-md-4 card-element"
-                                ref={div => cards[index] = div}
-                            >
-                                <Card bg="secondary" text="white" style={{ width: '18rem' ,height:"18rem"}} >
-                                    <Card.Header>{element.name}</Card.Header>
-                                    <Card.Link href={element.framework_link} target={"_blank"}>
-                                        <Card.Img variant="top" className={element.anime_class} alt="logo" src={element.logo} height={100} width={100}/>
-                                    </Card.Link>
-                                    <Card.Body >
-                                        <Card.Text  >
-                                            {element.secondaryTitle}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <br/>
-                            </div>
-                        ))}
+                        <FrameWorkSkills/>
                     </div>
                     <br/>
                     <br/>
                 </Container>):("")}
                 <Container>
-                        { languagesShow ?(<LanguageSkills/>)
-                            :("dfdf")}
+                    { languagesShow ?(
+                        <Container>
+                            <div className="row ">
+                                <LanguageSkills/>
+                            </div>
+                            <br/>
+                            <br/>
+                        </Container>):("")}
                 </Container>
             </Container>
         </Container>
