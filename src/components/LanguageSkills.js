@@ -19,9 +19,8 @@ function LanguageSkills() {
                     className="col-12 col-sm-6 col-md-4 card-element"
                     ref={div => cards[index] = div}
                 >
-                    <Card bg="secondary" text="white" style={{ width: '7rem' ,height:"5rem"}} >
                         <Card.Img variant="top" alt="logo" src={element.logo} height={100} width={100}/>
-                    </Card>
+                    <br/>
                     <br/>
                 </div>
             ))}

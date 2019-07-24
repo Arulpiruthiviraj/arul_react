@@ -8,12 +8,14 @@ import "../assets/css/LogoAnime.css"
 import LanguageSkills from "./LanguageSkills";
 import {CSSTransition} from "react-transition-group";
 import FrameWorkSkills from "./FrameWorkSkills";
+import CurrenlyLearning from "./CurrentlyLearning";
 
 function Skills() {
     const [cards,setCards]=useState([]);
     const [t1,setT1]=useState(new TimelineLite({ play: true }));
     const [frameworkShow,setFrameworkShow]=useState(true);
     const [languagesShow,setLanguagesShow]=useState(false);
+    const [currentlyLearning,setCurrentlyLearning]=useState(false);
 
     useEffect(() => {
         t1.staggerTo( cards , 0.5, { autoAlpha: 1, y: -40 }, 0.1);
@@ -23,11 +25,18 @@ function Skills() {
      const openFrameworks=()=>{
          setFrameworkShow(true);
          setLanguagesShow(false);
+         setCurrentlyLearning(false);
+
      };
      const openLanguages=()=>{
          setLanguagesShow(true);
          setFrameworkShow(false);
-
+         setCurrentlyLearning(false);
+     };
+     const openCurrentlyLearning=()=>{
+         setCurrentlyLearning(true);
+         setLanguagesShow(false);
+         setFrameworkShow(false);
      };
 
     return (
@@ -39,7 +48,7 @@ function Skills() {
                             <Card.Header>
                                 <Button variant="secondary" onClick={openFrameworks}>Frameworks and Technologies</Button>
                                 <Button variant="secondary" onClick={openLanguages}>Languages</Button>
-                                <Button variant="secondary">Currently Learning</Button>
+                                <Button variant="secondary" onClick={openCurrentlyLearning}>Currently Learning</Button>
                             </Card.Header>
                         </Card>
                         <br/>
@@ -49,19 +58,30 @@ function Skills() {
                 </Row>
             </Container>
             <Container>
-                { frameworkShow ?(
+                {frameworkShow ?(
                     <Container>
-                    <div className="row ">
-                        <FrameWorkSkills/>
-                    </div>
-                    <br/>
-                    <br/>
-                </Container>):("")}
+                        <div className="row ">
+                            <FrameWorkSkills/>
+                        </div>
+                        <br/>
+                        <br/>
+                    </Container>):("")
+                }
                 <Container>
-                    { languagesShow ?(
+                    {languagesShow ?(
                         <Container>
                             <div className="row ">
                                 <LanguageSkills/>
+                            </div>
+                            <br/>
+                            <br/>
+                        </Container>):("")}
+                </Container>
+                <Container>
+                    {currentlyLearning ?(
+                        <Container>
+                            <div className="row ">
+                                <CurrenlyLearning/>
                             </div>
                             <br/>
                             <br/>

@@ -9,6 +9,12 @@ import phpLogo from "../assets/images/php.svg";
 import javaScriptLogo from "../assets/images/javaScript.svg";
 import cLogo from "../assets/images/c.svg";
 import cplusplusLogo from "../assets/images/cplusplus.svg";
+import htmlLogo from "../assets/images/html.svg";
+import cssLogo from "../assets/images/css.svg";
+import machineLearningLogo from "../assets/images/ai.svg";
+import dataScienceLogo from "../assets/images/data-science.svg";
+import openCvLogo from "../assets/images/OpenCV_Logo.svg";
+import tensorflowLogo from "../assets/images/tensorflow-seeklogo.com.svg";
 
 
 
@@ -85,23 +91,34 @@ export const skillsDataLanguages = [
         "logo":cplusplusLogo,
     }, {
         "name": "html",
-        "logo":phpLogo,
+        "logo":htmlLogo,
+    },{
+        "name": "css",
+        "logo":cssLogo,
     },
 ];
 export const skillsDataLearning = [
     {
-        "name": "DataScience"
+        "name": "DataScience",
+        "logo":dataScienceLogo,
+        "framework_link":"https://en.wikipedia.org/wiki/Data_science"
     },
     {
-        "name": "Machine Learning"
+        "name": "Machine Learning",
+        "logo":machineLearningLogo,
+        "framework_link":"https://en.wikipedia.org/wiki/Machine_learning",
+
     },
     {
-        "name": "Tensorflow"
+        "name": "Tensorflow",
+        "logo":tensorflowLogo,
+        "framework_link":"https://www.tensorflow.org/",
+
     },
     {
-        "name": "pyTorch"
-    },
-    {
-        "name": "openCV"
+        "name": "openCV",
+        "logo":openCvLogo,
+        "framework_link":"https://opencv.org/"
+
     },
 ];
