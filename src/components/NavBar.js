@@ -28,7 +28,7 @@ function NavBar({routes}) {
                     {routes.map(route => (
                         <Nav.Link
                             key={route.path}
-                            as={NavLink}
+                            as={NavLink}hj
                             to={route.path}
                             activeClassName="active"
                             exact

@@ -1,13 +1,14 @@
 const user = 'aprprasanth16@gmail.com';
 const refreshToken = '1/fqWSccN7phKM8Ru2Upr67qg5-9CFL1-QUjvxVLCW2Hw';
-const accessToken = 'ya29.GltLB7VcMxcyEAsnkGQxP9ZZFiAaReqHsYcYG9J30eLfLTnpC-L0AKEPYHaQNF_vCFjGcGV8OBUo7Gj8mfnxa_gHehhgqKk_zwX-7oHUZPCg0fl7kc9y-sGin_2s';
-const clientId = '416297991473-buvv95q32gr403mns5kt7ghfen6n1tpq.apps.googleusercontent.com';
-// const clientSecret = 'YSy-bSyucTCzs42zV6k2-GIX';
+const accessToken = 'ya29.GltSB1sWEG1r1G6yO0p2KmorCdKikg-FBVicHvJTS9B4cQllyZ4UOpqjSH3S6aursPzMy9gFe9Sk8_EJpbIhfk7uLB8rhsBJQSKRx3JuDuBILUyoBHZ0bHGp2F9w';
+const clientId = '163314054591-0j2r129b51qs74k35p20pubrtms268f6.apps.googleusercontent.com';
+const clientSecret = '14202LtFrojXaiVM8zzz2SJM';
 
- const config={
+const config={
     user,
     clientId,
     refreshToken,
-    accessToken
+    accessToken,
+    clientSecret,
 };
 export default config;
