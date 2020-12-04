@@ -31,7 +31,7 @@ function Home() {
 
                             <Carousel.Caption>
                                 <h3>I'm <br/> Arulpiruthiviraj</h3>
-                                <a target={"_blank"} href="https://drive.google.com/file/d/1QXedPDF3KyL_ex3eOtbmn-7aYE3WQls5/view?usp=sharing" className="btn btn-outline-primary" role="button" aria-pressed="true">
+                                <a target={"_blank"} href="https://drive.google.com/file/d/1Iu038ypjyFrkDSkYcwm8EV_IKclh82YZ/view?usp=sharing" className="btn btn-outline-primary" role="button" aria-pressed="true">
                                     View CV
                                 </a>
                             </Carousel.Caption>
