@@ -1,13 +1,12 @@
-import React  from 'react';
-import { render } from 'react-dom';
-import Routes from "./routes/routes";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
 
-function App() {
-  return (
-      <div>
-        <Routes />
-      </div>
-  );
-}
-
-render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>,
+  document.getElementById('root')
+);

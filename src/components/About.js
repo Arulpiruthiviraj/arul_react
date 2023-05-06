@@ -1,18 +1,39 @@
-import React from 'react'
+import React from 'react';
+import styled from '@emotion/styled';
 
-function About() {
-    return (
-        <div style={{marginTop:60}}>
-            <h1>About</h1>
-            <p>
-                Donec sit amet augue at enim sollicitudin porta. Praesent finibus ex
-                velit, quis faucibus libero congue et. Quisque convallis eu nisl et
-                congue. Vivamus eget augue quis ante malesuada ullamcorper. Sed orci
-                nulla, eleifend eget dui faucibus, facilisis aliquet ante. Suspendisse
-                sollicitudin nibh lacus, ut bibendum risus elementum a.
-            </p>
-        </div>
-    )
-}
+const AboutSectionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #f5f5f5;
+`;
 
-export default About
+const AboutSectionTitle = styled.h2`
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+`;
+
+const AboutSectionContent = styled.p`
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 800px;
+`;
+
+const About = () => {
+  return (
+    <AboutSectionContainer>
+      <AboutSectionTitle>About Me</AboutSectionTitle>
+      <AboutSectionContent>
+        Hi there, my name is Arul Arunthavaraja. I am a full-stack developer with several years of experience in building web and mobile applications. I have worked with various technologies such as React, Angular, NodeJS, MongoDB, and AWS to develop efficient and user-friendly applications.
+        In my free time, I enjoy exploring new technologies, contributing to open-source projects, and reading books on software engineering and architecture.
+      </AboutSectionContent>
+    </AboutSectionContainer>
+  );
+};
+
+export default About;
