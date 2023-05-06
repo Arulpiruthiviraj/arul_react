@@ -1,33 +1,67 @@
 import { css } from "@emotion/react";
+import PhoneIcon from "@mui/icons-material/Phone";
+import MailIcon from "@mui/icons-material/Mail";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import DescriptionIcon from "@mui/icons-material/Description";
 
 const Contact = () => {
+  const iconStyle = css`
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  `;
+
   return (
     <div css={containerStyle}>
       <h2 css={headerStyle}>Contact</h2>
       <div css={infoContainerStyle}>
         <div css={infoItemStyle}>
           <span css={iconStyle}>
-            <i className="fas fa-map-marker-alt"></i>
+            <MailIcon />
           </span>
-          <span css={textStyle}>302 - 150 Leeward Glenway, North York, ON M3C 2Y9</span>
+          <a href="mailto:arul00016@gmail.com" css={textStyle}>
+            arul00016@gmail.com
+          </a>
         </div>
         <div css={infoItemStyle}>
           <span css={iconStyle}>
-            <i className="fas fa-envelope"></i>
+            <GitHubIcon />
           </span>
-          <a href="mailto:arul00016@gmail.com" css={textStyle}>arul00016@gmail.com</a>
+          <a
+            href="https://github.com/arulpiruthiviraj"
+            target="_blank"
+            rel="noopener noreferrer"
+            css={textStyle}
+          >
+            GitHub
+          </a>
         </div>
         <div css={infoItemStyle}>
           <span css={iconStyle}>
-            <i className="fas fa-phone"></i>
+            <LinkedInIcon />
           </span>
-          <a href="tel:+12262609520" css={textStyle}>(+1) 226-260-9520</a>
+          <a
+            href="https://www.linkedin.com/in/arulpiruthiviraj"
+            target="_blank"
+            rel="noopener noreferrer"
+            css={textStyle}
+          >
+            LinkedIn
+          </a>
         </div>
         <div css={infoItemStyle}>
           <span css={iconStyle}>
-            <i className="fab fa-github"></i>
+            <DescriptionIcon />
           </span>
-          <a href="https://github.com/arulpiruthiviraj" target="_blank" rel="noopener noreferrer" css={textStyle}>arulpiruthiviraj</a>
+          <a
+            href="https://medium.com/@arulpiruthiviraj"
+            target="_blank"
+            rel="noopener noreferrer"
+            css={textStyle}
+          >
+            Medium
+          </a>
         </div>
       </div>
     </div>
@@ -58,15 +92,10 @@ const infoItemStyle = css`
   margin-bottom: 1rem;
 `;
 
-const iconStyle = css`
-  font-size: 1.5rem;
-  margin-right: 1rem;
-`;
-
 const textStyle = css`
   font-size: 1.2rem;
-  color: #555;
-  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
 `;
 
 export default Contact;
