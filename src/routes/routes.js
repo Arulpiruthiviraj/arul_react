@@ -10,12 +10,14 @@ import NavBar from "../components/NavBar";
 import TimeLine from "../components/TimeLine";
 import Skills from "../components/Skill";
 import ScrollToTop from "../components/ScrollToTop";
+import Resume from "../components/resume/Resume";
 
 const routes = [
   { path: "/", name: "Home", Component: Home },
   { path: "/skills", name: "Skills", Component: Skills },
   { path: "/timeline", name: "Timeline", Component: TimeLine },
   { path: "/contact", name: "Contact", Component: Contact },
+  { path: "/resume", name: "Resume", Component: Resume }
 ];
 
 export default function Routes() {
