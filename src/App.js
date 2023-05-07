@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 import { Link, Element } from 'react-scroll';
 
 import Header from './components/Header';
-import Hero from './components/Hero';
+// import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
@@ -26,31 +26,46 @@ const theme = createTheme({
 });
 
 const Main = styled(Container)`
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 10px; /* Add padding to account for Header height */
+  padding-bottom: 10px;
+`;
+
+const SectionWrapper = styled.div`
+  padding-top: 100px; /* Add padding to account for Header height */
 `;
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Header/>
+      <Header />
+      {/* <Hero /> */}
       <Main maxWidth="lg">
-        <Element name="about" className="element">
-          <About />
-        </Element>
-        <Element name="experience" className="element">
-          <Experience />
-        </Element>
-        <Element name="skills" className="element">
-          <Skills />
-        </Element>
-        <Element name="projects" className="element">
-          <Projects />
-        </Element>
-        <Element name="contact" className="element">
-          <Contact />
-        </Element>
+        <SectionWrapper>
+          <Element name="about" className="element">
+            <About />
+          </Element>
+        </SectionWrapper>
+        <SectionWrapper>
+          <Element name="experience" className="element">
+            <Experience />
+          </Element>
+        </SectionWrapper>
+        <SectionWrapper>
+          <Element name="skills" className="element">
+            <Skills />
+          </Element>
+        </SectionWrapper>
+        <SectionWrapper>
+          <Element name="projects" className="element">
+            <Projects />
+          </Element>
+        </SectionWrapper>
+        <SectionWrapper>
+          <Element name="contact" className="element">
+            <Contact />
+          </Element>
+        </SectionWrapper>
       </Main>
       <Footer />
     </ThemeProvider>
