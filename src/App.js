@@ -2,6 +2,7 @@ import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, Container } from '@mui/material';
 import styled from '@emotion/styled';
+import { Link, Element } from 'react-scroll';
 
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -33,14 +34,23 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Header />
-      {/* <Hero /> */}
+      <Header/>
       <Main maxWidth="lg">
-        <About />
-        <Experience />
-        <Skills />
-        <Projects />
-        <Contact />
+        <Element name="about" className="element">
+          <About />
+        </Element>
+        <Element name="experience" className="element">
+          <Experience />
+        </Element>
+        <Element name="skills" className="element">
+          <Skills />
+        </Element>
+        <Element name="projects" className="element">
+          <Projects />
+        </Element>
+        <Element name="contact" className="element">
+          <Contact />
+        </Element>
       </Main>
       <Footer />
     </ThemeProvider>
